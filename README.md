@@ -43,27 +43,28 @@ The challenge used hmean score to rank model's performance which is:
 	- Feature Pyramid Enhancement Module (FPEM)
 	- Feature Fusion Module (FFM)
 
-#### FPEM module
-<img src="./assets/PAN_FPEM_module.png">
-
-#### FFM module
-<img src="./assets/PAN_FFM_module.png">
 
 #### Pixel Aggregation (PA)
-<img src="./assets/PAN_PA.png">
 
 - In the post-processing phase, there are 2 ideas:
-	- Distance between text pixel and kernel in the same text instance must be small enough in order to assign the text pixels to the right kernel. To achieve this, PAN used:
-		- Loss aggregation: 
+	- Distance between text pixel and kernel in the same text instance must be small enough in order to assign the text pixels to the right kernel. To achieve this, PAN used Loss aggregation: 
 <img src="./assets/Lagg_gif.latex.gif">
 
-	- The other idea is that the distance between kernels must be far enough. To achive this, PAN used:
-		- Loss discriminate:
+	- The other idea is that the distance between kernels must be far enough. To achive this, PAN used Loss discriminate:
+<img src="./assets/Ldis_gif.latex.gif">		
 
-
-
-## PAN's Loss function
+### PAN's Loss function
 
 <img src="./assets/Lall_gif.latex.gif">
 <img src="./assets/Lall_explain_gif.latex.gif">
 
+
+## Result:
+
+By only applying the PAN model for task 1, the result got [5th place in the context of SROIE](https://rrc.cvc.uab.es/?ch=13&com=evaluation&task=1):
+<img src="./assets/5th.png">
+
+- One of the worst result got hmean = 0.6567
+<img src="./assets/f1_6567_worst_rslt_.png">
+- One of the best result with hmean = 1
+<img src="./assets/f1_100_best_rslt_.png">
