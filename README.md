@@ -1,0 +1,1 @@
+# Scanned-Text-Receipt-Text-Localization
