@@ -65,3 +65,11 @@ By only applying the PAN model for task 1, the result got [5th place in the cont
 <img src="./assets/f1_6567_worst_rslt_.png">
 - **One of the best result with hmean = 1**
 <img src="./assets/f1_100_best_rslt_.png">
+
+## Conclusion:
+- `Time for training` to get my best result by reusing the pretrained model of PAN was just a few epoches.
+- Got 5th place by using only 1 model when comparing with other methods listed in the ranking.
+- My opinion: 
+	- There are two phases segmentation head and post processing this can slow down the inference phase. But comparing with others model (in the comparion section of the paper), PAN still gets good performance while keeping high speed for curve text detection. But in the case of this task, I was unable to compare the speed because of resources.
+	- The inference phase highly depends on cv2 to find the connected component. It's hard to explain the reason of choosing alpha, beta, delta_dis, delta_agg for the loss function which my cost a lot of time for tuning the model.
+	- To increase the performance of model, we can increase the number of FPEM module or replace the resnet18 backbone by resnet50, ... or applying new method for FFM module to fusion the FPEM modules.
