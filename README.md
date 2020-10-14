@@ -16,7 +16,9 @@
 	<img src="./assets/6567.jpg">	
 
 ## Evaluation
-The challenge used hmean score to rank model's performance which is: hmean =$2\times \frac{Precision \times Recall}{Precision + Recall}$
+The challenge used hmean score to rank model's performance which is: 
+
+hmean =`$2\times \frac{Precision \times Recall}{Precision + Recall}$`
 
 ## PAN model
 
@@ -52,9 +54,13 @@ The challenge used hmean score to rank model's performance which is: hmean =$2\t
 
 - In the post-processing phase, there are 2 ideas:
 	- Distance between text pixel and kernel in the same text instance must be small enough in order to assign the text pixels to the right kernel. To achieve this, PAN used:
-		- Loss aggregation: $ \mathcal{L}_{agg} = \frac{1}{N}\sum^{N}_{i=1}\frac{1}{|T_i|} \sum_{p \in T_i} \ln(\mathcal{D}(p, K_i)+1)$
+		- Loss aggregation: 
+$ \mathcal{L}_{agg} = \frac{1}{N}\sum^{N}_{i=1}\frac{1}{|T_i|} \sum_{p \in T_i} \ln(\mathcal{D}(p, K_i)+1)$
+
 	- The other idea is that the distance between kernels must be far enough. To achive this, PAN used:
-		- Loss discriminate: $\mathcal{L}_{dis}$ = $\frac{1}{N(N-1)} \sum^{N}_{i=1} \sum^{N}_{j=1,j \neq i} \ln(\mathcal{D}(K_i, K_j)+1)$
+		- Loss discriminate:
+
+$\mathcal{L}_{dis}$ = $\frac{1}{N(N-1)} \sum^{N}_{i=1} \sum^{N}_{j=1,j \neq i} \ln(\mathcal{D}(K_i, K_j)+1)$
 
 ## PAN's Loss function
 
