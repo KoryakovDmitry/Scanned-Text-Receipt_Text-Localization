@@ -18,11 +18,7 @@
 ## Evaluation
 The challenge used hmean score to rank model's performance which is: 
 
-                 Precision times Recall 
-hmean  = $2times ----------------------$
-                  Precision  +  Recall  
-
-
+<a href="https://www.codecogs.com/eqnedit.php?latex=hmean&space;=&space;2\times&space;\frac{Precision&space;\times&space;Recall}{Precision&space;&plus;&space;Recall}" target="_blank"><img src="https://latex.codecogs.com/gif.latex?hmean&space;=&space;2\times&space;\frac{Precision&space;\times&space;Recall}{Precision&space;&plus;&space;Recall}" title="hmean = 2\times \frac{Precision \times Recall}{Precision + Recall}" /></a>
 
 ## PAN model
 
