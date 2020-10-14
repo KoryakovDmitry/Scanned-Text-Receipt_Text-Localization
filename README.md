@@ -1,5 +1,19 @@
 # Scanned-Text-Receipt-Text-Localization
 
+## Usage
+
+**[My notebook in Vietnamese for the model detail]()**
+
+- requirements: test_params_on_val/requirements.txt
+- download training data and extract to folder: dataset/0325updated_task1train626p
+- download testing data and extract to folder: dataset/path_for_test
+- download [pretrained PAN model](https://drive.google.com/drive/folders/1bKPQEEOJ5kgSSRMpnDB8HIRecnD_s4bR) and place it in folder: test_params_on_val/pretrained_offical_PAN
+- format the data for PAN by running file: dataset/prepare_data_task12.py
+- config path, hyperparams, pretrained ... in file: test_params_on_val/config.json
+- optional: preprocessing images with denoise, RoI, blur, ...
+- run file: test_params_on_val/train.py
+- don't forget to set tensorboard=True to track the model's performance in tensorboard
+
 ## Data
 - This project was aimed to localize texts with 4 vertices which was task 1 of [ICDAR-SROIE 2019](https://rrc.cvc.uab.es/?ch=13&com=introduction)
 - The dataset was also provided by ICDAR-SROIE with 626 images for training phase and 361 images for testing phase.
@@ -64,8 +78,7 @@ By only applying the PAN model for task 1, the result got [5th place in the cont
 **One of the worst result got hmean = 0.6567**
 <img src="./assets/f1_6567_worst_rslt_.png">
 
-================================================================================
-================================================================================
+=====================
 
 **One of the best result with hmean = 1**
 <img src="./assets/f1_100_best_rslt_.png">

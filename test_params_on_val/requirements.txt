@@ -1,0 +1,12 @@
+numpy==1.18.5
+pyclipper
+colorlog
+Polygon3
+opencv-python 
+torch
+torchvision
+tensorboard
+matplotlib
+scikit-image
+tqdm
+sklearn
