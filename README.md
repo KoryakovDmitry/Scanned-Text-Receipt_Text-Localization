@@ -61,9 +61,13 @@ The challenge used hmean score to rank model's performance which is:
 By only applying the PAN model for task 1, the result got [5th place in the context of SROIE](https://rrc.cvc.uab.es/?ch=13&com=evaluation&task=1):
 <img src="./assets/5th.png">
 
-- **One of the worst result got hmean = 0.6567**
+**One of the worst result got hmean = 0.6567**
 <img src="./assets/f1_6567_worst_rslt_.png">
-- **One of the best result with hmean = 1**
+
+================================================================================
+================================================================================
+
+**One of the best result with hmean = 1**
 <img src="./assets/f1_100_best_rslt_.png">
 
 ## Conclusion:
