@@ -18,7 +18,11 @@
 ## Evaluation
 The challenge used hmean score to rank model's performance which is: 
 
-hmean =`$2\times \frac{Precision \times Recall}{Precision + Recall}$`
+                 Precision times Recall 
+hmean  = $2times ----------------------$
+                  Precision  +  Recall  
+
+
 
 ## PAN model
 
