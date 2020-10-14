@@ -13,7 +13,7 @@
 	...
 	```
 	- An example of image:
-	<img src="./assets/6567.jpg">	
+	<img width="200" height="500" src="./assets/6567.jpg">	
 
 ## Evaluation
 The challenge used hmean score to rank model's performance which is: 
