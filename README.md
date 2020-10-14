@@ -13,12 +13,12 @@
 	...
 	```
 	- An example of image:
-	<img width="500" height="700" src="./assets/6567.jpg">	
+	<img width="400" height="700" src="./assets/6567.jpg">	
 
 ## Evaluation
 The challenge used hmean score to rank model's performance which is: 
 
-<img src="./assets/gif.latex.gif">
+<img src="./assets/hmean_gif.latex.gif">
 
 ## PAN model
 
@@ -55,17 +55,15 @@ The challenge used hmean score to rank model's performance which is:
 - In the post-processing phase, there are 2 ideas:
 	- Distance between text pixel and kernel in the same text instance must be small enough in order to assign the text pixels to the right kernel. To achieve this, PAN used:
 		- Loss aggregation: 
-$ \mathcal{L}_{agg} = \frac{1}{N}\sum^{N}_{i=1}\frac{1}{|T_i|} \sum_{p \in T_i} \ln(\mathcal{D}(p, K_i)+1)$
+<img src="./assets/Lagg_gif.latex.gif">
 
 	- The other idea is that the distance between kernels must be far enough. To achive this, PAN used:
 		- Loss discriminate:
 
-$\mathcal{L}_{dis}$ = $\frac{1}{N(N-1)} \sum^{N}_{i=1} \sum^{N}_{j=1,j \neq i} \ln(\mathcal{D}(K_i, K_j)+1)$
+
 
 ## PAN's Loss function
 
-$\mathcal{L}=\mathcal{L}_{text} + \alpha \mathcal{L}_{ker} + \beta (\mathcal{L}_{agg} + \mathcal{L}_{dis})$
+<img src="./assets/Lall_gif.latex.gif">
+<img src="./assets/Lall_explain_gif.latex.gif">
 
-- $\mathcal{L}_{text}$: text regions loss
-- $\mathcal{L}_{ker}$: kernels loss
-- $\alpha, \beta$: balancing the importance between $\mathcal{L}_{text}, \mathcal{L}_{ker}, \mathcal{L}_{agg}, \mathcal{L}_{dis}$.
