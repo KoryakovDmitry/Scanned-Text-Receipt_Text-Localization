@@ -73,8 +73,10 @@ The challenge used hmean score to rank model's performance which is:
 #### Pixel Aggregation (PA)
 
 - In the post-processing phase, there are 2 ideas:
-	- Distance between text pixel and kernel in the same text instance must be small enough in order to assign the text pixels to the right kernel. To achieve this, PAN used Loss aggregation: <img src="./assets/Lagg_gif.latex.gif">
-	- The other idea is that the distance between kernels must be far enough. To achive this, PAN used Loss discriminate: <img src="./assets/Ldis_gif.latex.gif">		
+	- Distance between text pixel and kernel in the same text instance must be small enough in order to assign the text pixels to the right kernel. To achieve this, PAN used Loss aggregation:
+	<img src="./assets/Lagg_gif.latex.gif">
+	- The other idea is that the distance between kernels must be far enough. To achive this, PAN used Loss discriminate:
+	<img src="./assets/Ldis_gif.latex.gif">		
 
 ### PAN's Loss
 
