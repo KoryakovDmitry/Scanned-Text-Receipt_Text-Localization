@@ -1,8 +1,20 @@
 # Scanned-Text-Receipt-Text-Localization
 
+## Content
+- [Usage](https://github.com/xuatpham/Scanned-Text-Receipt_Text-Localization#usage)
+- [Data](https://github.com/xuatpham/Scanned-Text-Receipt_Text-Localization#data)
+- [Evaluation](https://github.com/xuatpham/Scanned-Text-Receipt_Text-Localization#evaluation)
+- [PAN model](https://github.com/xuatpham/Scanned-Text-Receipt_Text-Localization#pan-model)
+	- [PAN pipeline](https://github.com/xuatpham/Scanned-Text-Receipt_Text-Localization#pan-pipeline)
+	- [PAN architecture](https://github.com/xuatpham/Scanned-Text-Receipt_Text-Localization#pan-architecture)
+		- [Pixel Aggregation](https://github.com/xuatpham/Scanned-Text-Receipt_Text-Localization#pixel-aggregation-pa)
+	- [PAN Loss](https://github.com/xuatpham/Scanned-Text-Receipt_Text-Localization#pans-loss-function)
+- [Result](https://github.com/xuatpham/Scanned-Text-Receipt_Text-Localization#result)
+- [Conclusion](https://github.com/xuatpham/Scanned-Text-Receipt_Text-Localization#conclusion)
+
 ## Usage
 
-**[My notebook in Vietnamese for the model detail]()**
+**[My notebook in Vietnamese for the model detail](https://github.com/xuatpham/Scanned-Text-Receipt_Text-Localization/blob/main/MLP305x_Report.ipynb)**
 
 - requirements: test_params_on_val/requirements.txt
 - download training data and extract to folder: dataset/0325updated_task1train626p
@@ -64,7 +76,7 @@ The challenge used hmean score to rank model's performance which is:
 	- Distance between text pixel and kernel in the same text instance must be small enough in order to assign the text pixels to the right kernel. To achieve this, PAN used Loss aggregation: <img src="./assets/Lagg_gif.latex.gif">
 	- The other idea is that the distance between kernels must be far enough. To achive this, PAN used Loss discriminate: <img src="./assets/Ldis_gif.latex.gif">		
 
-### PAN's Loss function
+### PAN's Loss
 
 <img src="./assets/Lall_gif.latex.gif">
 <img src="./assets/Lall_explain_gif.latex.gif">
