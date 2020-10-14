@@ -13,7 +13,7 @@
 	...
 	```
 	- An example of image:
-	<img width="400" height="700" src="./assets/6567.jpg">	
+	<img width="300" height="600" src="./assets/6567.jpg">	
 
 ## Evaluation
 The challenge used hmean score to rank model's performance which is: 
@@ -47,11 +47,8 @@ The challenge used hmean score to rank model's performance which is:
 #### Pixel Aggregation (PA)
 
 - In the post-processing phase, there are 2 ideas:
-	- Distance between text pixel and kernel in the same text instance must be small enough in order to assign the text pixels to the right kernel. To achieve this, PAN used Loss aggregation: 
-<img src="./assets/Lagg_gif.latex.gif">
-
-	- The other idea is that the distance between kernels must be far enough. To achive this, PAN used Loss discriminate:
-<img src="./assets/Ldis_gif.latex.gif">		
+	- Distance between text pixel and kernel in the same text instance must be small enough in order to assign the text pixels to the right kernel. To achieve this, PAN used Loss aggregation: <img src="./assets/Lagg_gif.latex.gif">
+	- The other idea is that the distance between kernels must be far enough. To achive this, PAN used Loss discriminate: <img src="./assets/Ldis_gif.latex.gif">		
 
 ### PAN's Loss function
 
@@ -64,7 +61,7 @@ The challenge used hmean score to rank model's performance which is:
 By only applying the PAN model for task 1, the result got [5th place in the context of SROIE](https://rrc.cvc.uab.es/?ch=13&com=evaluation&task=1):
 <img src="./assets/5th.png">
 
-- One of the worst result got hmean = 0.6567
+- **One of the worst result got hmean = 0.6567**
 <img src="./assets/f1_6567_worst_rslt_.png">
-- One of the best result with hmean = 1
+- **One of the best result with hmean = 1**
 <img src="./assets/f1_100_best_rslt_.png">
