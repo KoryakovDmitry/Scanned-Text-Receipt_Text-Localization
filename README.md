@@ -14,7 +14,7 @@
 
 ## Usage
 
-**[My notebook in Vietnamese for the model detail](https://github.com/xuatpham/Scanned-Text-Receipt_Text-Localization/blob/main/MLP305x_Report.ipynb)**
+**[My notebook in Vietnamese for more details](https://github.com/xuatpham/Scanned-Text-Receipt_Text-Localization/blob/main/MLP305x_Report.ipynb)**
 
 - requirements: test_params_on_val/requirements.txt
 - download training data and extract to folder: dataset/0325updated_task1train626p
